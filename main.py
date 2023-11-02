@@ -21,7 +21,8 @@ def index():
 
 # enbeddingしたリストを読み込み。
 load_embeddings = []
-with open(r"C:\Users\wanna\OneDrive\デスクトップ\deploy_first\embedding_list.pkl", "rb") as file:
+# with open(r"C:\Users\wanna\OneDrive\デスクトップ\deploy_first\embedding_list.pkl", "rb") as file:
+with open("embedding_list.pkl", "rb") as file:
   loaded_tensor_list = pickle.load(file)
   for tensor in loaded_tensor_list:
      load_embeddings.append(tensor)
@@ -29,7 +30,8 @@ with open(r"C:\Users\wanna\OneDrive\デスクトップ\deploy_first\embedding_li
 # テキストと作者の読み込み
 text_list=[]
 author_list=[]
-with open(r"C:\Users\wanna\OneDrive\デスクトップ\deploy_first\under_1000.csv", mode="r", encoding="utf-8") as file:
+# with open(r"C:\Users\wanna\OneDrive\デスクトップ\deploy_first\under_1000.csv", mode="r", encoding="utf-8") as file:
+with open("under_1000.csv", mode="r", encoding="utf-8") as file:
    csv_reader = csv.reader(file)
    next(csv_reader)
    for row in csv_reader:
