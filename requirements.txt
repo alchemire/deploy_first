@@ -15,7 +15,7 @@ scipy==1.11.3
 sentencepiece==0.1.99
 streamlit==1.28.0
 tokenizers==0.14.1
-torch==2.1.0+cpu
+torch-cpu==2.1.0
 torchmetrics==1.2.0
 transformers==4.34.1
 uvicorn==0.23.2
