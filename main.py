@@ -36,7 +36,7 @@ with open("under_1000.csv", mode="r", encoding="utf-8") as file:
       author_list.append(row[0])
 
 # use cpu to smaller one >> add .to(device) bert_model and input_text 
-device = torch.device('cpu')
+# device = torch.device('cpu')
 
 # モデルの読み込み
 model_name='cl-tohoku/bert-base-japanese-whole-word-masking'
